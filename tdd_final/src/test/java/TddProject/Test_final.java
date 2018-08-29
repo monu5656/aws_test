@@ -16,7 +16,7 @@ public class Test_final {
 		
 		WebDriver driver = new FirefoxDriver();
 		System.out.print("mera name");
-		System.setProperty("webdriver.gecko.driver","/monu_tom/geckodriver");
+		System.setProperty("webdriver.gecko.driver","/geckodriver");
 		
 		driver.get("http://52.74.156.183:8070/Spring3HibernateApp-0.0.1-SNAPSHOT/");
 	}
