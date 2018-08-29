@@ -19,7 +19,7 @@ public class Test_final {
 		System.setProperty("webdriver.gecko.driver","/monu_tom/geckodriver");
 		File pathBinary = new File("/usr/lib/firefox");
 		FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
-		
+		DesiredCapabilities desired = DesiredCapabilities.firefox();
 		FirefoxOptions options = new FirefoxOptions();
 		desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
 		WebDriver driver = new FirefoxDriver(options);
