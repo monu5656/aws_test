@@ -16,8 +16,8 @@ public class Test_final {
 		
 		
 		System.out.print("mera name");
-		System.setProperty("webdriver.gecko.driver","/monu_tom/geckodriver");
-		File pathBinary = new File("/usr/lib/firefox/firefox");
+		System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
+		File pathBinary = new File("/usr/lib/firefox");
 		FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
 		DesiredCapabilities desired = DesiredCapabilities.firefox();
 		FirefoxOptions options = new FirefoxOptions();
