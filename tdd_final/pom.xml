@@ -13,11 +13,10 @@
 </dependency>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
 
-    
     <dependency>
-    <groupId>org.standalone.selenium</groupId>
-    <artifactId>selenium-server-standalone</artifactId>
-    <version>2.44.0</version>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-server</artifactId>
+    <version>3.13.0</version>
 </dependency>
   
   </dependencies>
