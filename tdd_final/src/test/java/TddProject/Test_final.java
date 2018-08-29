@@ -13,16 +13,12 @@ public class Test_final {
 
 	@Test
 	public void f1(){
-		//System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
+		
+		WebDriver driver = new FirefoxDriver();
 		System.out.print("mera name");
-		System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
-		File pathBinary = new File("/usr/lib/firefox");
-		FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
-		DesiredCapabilities desired = DesiredCapabilities.firefox();
-		FirefoxOptions options = new FirefoxOptions();
-		desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
-		WebDriver driver = new FirefoxDriver(options);
-		driver.get("http://52.74.156.183:8090/Spring3HibernateApp-0.0.1-SNAPSHOT/");
+		System.setProperty("webdriver.gecko.driver","/monu_tom/geckodriver");
+		
+		driver.get("http://52.74.156.183:8070/Spring3HibernateApp-0.0.1-SNAPSHOT/");
 	}
 	
 }
