@@ -17,6 +17,11 @@ public class Test_final {
 		
 		System.out.print("mera name");
 		System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
+		File pathBinary = new File("/usr/lib/firefox/firefox.sh");
+		FirefoxBinary firefoxBinary = new FirefoxBinary(pathBinary);   
+		DesiredCapabilities desired = DesiredCapabilities.firefox();
+		FirefoxOptions options = new FirefoxOptions();
+		desired.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options.setBinary(firefoxBinary));
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://52.74.156.183:8070/Spring3HibernateApp-0.0.1-SNAPSHOT/");
 	}
